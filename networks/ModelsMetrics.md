@@ -20,11 +20,14 @@ LADD dataset
 |resnet50_LADD.pth (basic torch)		   | 1500,2000 |   0.8767  | 0.9595   | 0.6556   | 0.8053   | 0.8987   | *1  |
 |resnet50_LADD_epoch_8.pth (2 phase torch) | 1500,2000 |   0.8985  | 0.9731   | 0.7455   | 0.8067   | 0.9146   | *2  |
 |resnet50_FRCNN_LADD_epoch_9.pth           | 1500,2000 |   0.9225  | 0.9801   | 0.7813   | 0.8747   | 0.9183   | *3  |
+|resnet50_RN_LADD_epoch_18.pth             | 1500,2000 |   0.9186  | 0.9660   | 0.7835   | 0.8743   | 0.9275   | *4  |
+
 
 ---
 *1 Not tuned ancors, not train on empty images?, trainable_backbone_layers default = None
 *2 Not tuned ancors, not train on empty images (train SDD->head->head+backbone)
 *3 Faster RCNN with the same parameters as retina (train SDD->head->head+backbone)
+*4 Tuned anchors, but not included empty images 
 
 
 SDD ds metric
